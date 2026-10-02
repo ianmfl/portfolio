@@ -3,6 +3,7 @@ import {Suspense} from 'react';
 import Navbar from './components/Navbar';
 import VideoSection from './components/VideSection';
 import SkillsSection from './components/Skill';
+import CertificationSection from './components/Certification';
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
             <VideoSection />
           </Suspense>
         </div>
-          <SkillsSection />
+        <SkillsSection />
+        <CertificationSection />
       </main>
       
     </div>
