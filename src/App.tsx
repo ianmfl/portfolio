@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import VideoSection from './components/VideSection';
 import SkillsSection from './components/Skill';
 import CertificationSection from './components/Certification';
+import ContactSection from './components/ContactSection';
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
         <SkillsSection />
         <CertificationSection />
       </main>
-      
+      <ContactSection />
     </div>
   )
 }
