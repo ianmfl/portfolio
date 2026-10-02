@@ -1,3 +1,5 @@
+import { useEffect, useRef, useState } from "react";
+
 interface Certification {
   title: string;
   issuer: string;
@@ -40,3 +42,33 @@ export const skills: Skill[] = [
   { name: 'Testing', category: 'Other', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg' },
 ];
 
+
+export function useIntersectionObserver(options = {}) {
+  const [isIntersecting, setIsIntersecting] = useState(false);
+  const elementRef = useRef<HTMLElement | null>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(([entry]) => {
+      // Si el elemento es visible, actualizamos el estado
+      if (entry.isIntersecting) {
+        setIsIntersecting(true);
+        // Opcional: dejar de observar una vez que ya apareció
+        if (elementRef.current) {
+          observer.unobserve(elementRef.current);
+        }
+      }
+    }, { threshold: 0.1, ...options }); // Umbral: se activa cuando el 10% del elemento es visible
+
+    if (elementRef.current) {
+      observer.observe(elementRef.current);
+    }
+
+    return () => {
+      if (elementRef.current) {
+        observer.unobserve(elementRef.current);
+      }
+    };
+  }, [options]);
+
+  return { isIntersecting, elementRef };
+}
