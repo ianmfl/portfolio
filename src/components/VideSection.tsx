@@ -14,16 +14,18 @@ function VideoSection() {
     >
       <div className="mb-8">
         <p className="text-xs font-semibold tracking-widest text-gray-400 uppercase">Presentación</p>
-        <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-black mt-2">Conóceme un poco más</h2>
+        {/* <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-black mt-2">Conóceme un poco más</h2> */}
       </div>
 
       <div className="relative overflow-hidden rounded-2xl border border-neutral-200 bg-neutral-900 shadow-xl aspect-video">
         <video 
           src={presentationVideo}
-          controls
+          autoPlay
+        controls
           playsInline
           preload="metadata"
-          className="w-full h-full object-cover"
+        className="w-full h-full object-cover"
+        
         >
           Tu navegador no soporta la reproducción de video.
         </video>

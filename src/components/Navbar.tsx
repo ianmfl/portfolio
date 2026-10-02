@@ -1,3 +1,5 @@
+import type React from "react";
+
 const Navbar = () => {
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
     e.preventDefault();
@@ -28,7 +30,6 @@ const Navbar = () => {
           IAN FLORES
         </a>
         <div className="flex items-center gap-6 text-sm font-medium text-gray-600">
-          <a href="#about" onClick={(e) => handleNavClick(e, 'about')} className="hover:text-black transition-all hover:scale-105 active:scale-95 hidden sm:inline-block">Acerca</a>
           <a href="#skills" onClick={(e) => handleNavClick(e, 'skills')} className="hover:text-black transition-all hover:scale-105 active:scale-95 hidden sm:inline-block">Habilidades</a>
           <a href="#certifications" onClick={(e) => handleNavClick(e, 'certifications')} className="hover:text-black transition-all hover:scale-105 active:scale-95 hidden sm:inline-block">Certificaciones</a>
           <a href="#contact" onClick={(e) => handleNavClick(e, 'contact')} className="hover:text-black transition-all hover:scale-105 active:scale-95">Contacto</a>
