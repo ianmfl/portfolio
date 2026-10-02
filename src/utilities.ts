@@ -16,7 +16,7 @@ export const certifications: Certification[] = [
   {
     title: 'CS50\'s Introduction to Computer Science', // Placeholder para tu cert real
     issuer: 'HarvardX',
-    link: '#', // Reemplazar con el link real
+    link: 'https://courses.edx.org/certificates/ca7e59f6ad2e428a963b509912eac2fe', // Reemplazar con el link real
   },
   {
     title: 'CS50\'s Web Programming with Python and JavaScript', // Placeholder
@@ -34,7 +34,8 @@ export const skills: Skill[] = [
   { name: 'React', category: 'Frontend', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg' },
   { name: 'React Native', category: 'Frontend', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg' },
   { name: 'NextJS', category: 'Frontend', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg' },
-  { name: 'TypeScript', category: 'Frontend', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg' },
+    { name: 'TypeScript', category: 'Frontend', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg' },
+  { name: 'JavaScript', category: 'Frontend', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg' },
   { name: 'Tailwind CSS', category: 'Frontend', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg' },
   { name: 'CSS', category: 'Frontend', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg' },
   { name: 'NodeJs', category: 'Backend', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg' },
